@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Fase 2</name>
+    <events>
+        <include>Controles</include>
+        <event-block sid="470385684710212">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="952575151859862" type="Player">
+                    <param id="0" name="Object">VenonDino</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="959891482338170">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="355275629210211" type="Player">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">VenonDino.Y - 35</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="731539711054723" type="VenonDino" />
+                    </actions>
+                </event-block>
+                <event-block sid="655057018132348">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="313600293330324" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="591953556190313" type="System">
+                            <param id="0" name="Layout">Fase 2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="763379217870220">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="663527394733028" type="Player">
+                    <param id="0" name="Object">Limbo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="803441931339532" type="System">
+                    <param id="0" name="Layout">Fase 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="953680299576110">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="674297300652016" type="Player">
+                    <param id="0" name="Object">PortalF3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="155731514714956" type="System">
+                    <param id="0" name="Layout">Fase 3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,14 @@
+#bt-iniciar{
+	background-color: #009E54;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 32px;
+}
+
+#bt-iniciar:hover{
+	font-size: 38px;
+	background-color: #036C46;
+	transition: 0.6s;
+}

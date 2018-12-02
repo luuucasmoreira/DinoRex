@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Principal</name>
+    <events>
+        <include>Monstro Velo</include>
+        <include>Controles</include>
+        <event-block sid="908886837142282">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="596550699928812" type="Player">
+                    <param id="0" name="Object">PortalFase2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="679671277666259" type="System">
+                    <param id="0" name="Layout">Fase 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="487083187238962">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="155957314734158" type="Player">
+                    <param id="0" name="Object">Velo</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="594362704852256">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="181169804233230" type="Player">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">Velo.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="867966561461437" type="Velo" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="627092748034557">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="112685206911431" type="Player">
+                    <param id="0" name="Object">VenonDino</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="353348668615806">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="477285467275252" type="Player">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">VenonDino.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="817117990316573" type="VenonDino" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="865913366020996">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="460015101685302" type="Player">
+                    <param id="0" name="Object">Limbo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="599192529328430" type="System">
+                    <param id="0" name="Layout">Fase 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674554732573074">
+            <conditions>
+                <condition id="0" name="On clicked" sid="845465052565318" type="bt_iniciar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="627316029515698" type="System">
+                    <param id="0" name="Layout">Fase 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="120768611562052">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

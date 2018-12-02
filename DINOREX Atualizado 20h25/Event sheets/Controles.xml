@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controles</name>
+    <events>
+        <comment>MOVIMENTOS DO PLAYER</comment>
+        <event-block sid="220026753353878">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="557188922611449" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="352789301638869" type="Player">
+                    <param id="0" name="Animation">&quot;ID_&quot; &amp; Player.Estado</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="855977277152538">
+            <conditions>
+                <condition id="2" name="Key is down" sid="207383219684577" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="381168524792026" type="Player">
+                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="887904584103306" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="613052762967067">
+            <conditions>
+                <condition id="2" name="Key is down" sid="896527762727030" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="374434107991448" type="Player">
+                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="579786129193075" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="932976460216794">
+            <conditions>
+                <condition id="2" name="Key is down" sid="169845746002581" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="416779855028725" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="427750646215280" type="Player">
+                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277139330864667">
+            <conditions>
+                <condition id="-22" name="Else" sid="710642676757327" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="611859166087719">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="601014640653159" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="144812418121862" type="Player">
+                            <param id="0" name="Animation">&quot;Parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>DANO NO MOB</comment>
+        <event-block sid="466301000723686">
+            <conditions />
+            <actions />
+            <sub-events>
+                <event-block sid="128114766429337">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

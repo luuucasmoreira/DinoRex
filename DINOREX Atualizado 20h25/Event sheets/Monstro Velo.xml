@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Monstro Velo</name>
+    <events>
+        <event-block sid="874033535502848">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="994005338317233" type="Velo">
+                    <param id="0" name="Instance variable">irParaDireita</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="461295800898261" type="Velo">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="978896402371973" type="Velo">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="679554527509163">
+            <conditions>
+                <condition id="-22" name="Else" sid="348645940111031" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="779467291093130" type="Velo">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="567788121520980" type="Velo">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="412101805523964">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="991212797001882" type="Velo">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="676288549164810" type="Velo">
+                    <param id="0" name="Instance variable">irParaDireita</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="542283768911305">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="649384276415248" type="Velo">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="681859864159879" type="Velo">
+                    <param id="0" name="Instance variable">irParaDireita</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
